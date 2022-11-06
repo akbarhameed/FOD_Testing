@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="ShippingOptionsTranslationsEO"
+  Version="11.1.1.64.93"
+  InheritPersonalization="true"
+  DBObjectType="table"
+  DBObjectName="SHIPPING_OPTION_TRANSLATIONS"
+  AliasName="ShippingOptionsTranslationsE1"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <DesignTime>
+    <AttrArray Name="_publishEvents"/>
+  </DesignTime>
+  <Attribute
+    Name="ShippingTranslationsId"
+    IsNotNull="true"
+    Precision="15"
+    Scale="0"
+    ColumnName="SHIPPING_TRANSLATIONS_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="SHIPPING_OPTION_TRANSLATIONS"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="16"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ShippingOptionId"
+    IsNotNull="true"
+    Precision="15"
+    Scale="0"
+    ColumnName="SHIPPING_OPTION_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="SHIPPING_OPTION_TRANSLATIONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="16"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ShippingMethod"
+    IsNotNull="true"
+    Precision="100"
+    ColumnName="SHIPPING_METHOD"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SHIPPING_OPTION_TRANSLATIONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="100"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Language"
+    IsNotNull="true"
+    Precision="30"
+    ColumnName="LANGUAGE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SHIPPING_OPTION_TRANSLATIONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="SourceLang"
+    IsNotNull="true"
+    Precision="4000"
+    ColumnName="SOURCE_LANG"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SHIPPING_OPTION_TRANSLATIONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="4000"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreatedBy"
+    IsNotNull="true"
+    Precision="60"
+    ColumnName="CREATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SHIPPING_OPTION_TRANSLATIONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="60"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreationDate"
+    IsNotNull="true"
+    ColumnName="CREATION_DATE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="SHIPPING_OPTION_TRANSLATIONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastUpdatedBy"
+    IsNotNull="true"
+    Precision="60"
+    ColumnName="LAST_UPDATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SHIPPING_OPTION_TRANSLATIONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="60"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastUpdateDate"
+    IsNotNull="true"
+    ColumnName="LAST_UPDATE_DATE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="SHIPPING_OPTION_TRANSLATIONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ObjectVersionId"
+    IsNotNull="true"
+    Precision="15"
+    Scale="0"
+    ColumnName="OBJECT_VERSION_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="SHIPPING_OPTION_TRANSLATIONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="16"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="ShippingOptionsEO"
+    Association="model.mwgl.eo.ShippingOptionTranslationFkAssoc"
+    AssociationEnd="model.mwgl.eo.ShippingOptionTranslationFkAssoc.ShippingOptionsEO"
+    AssociationOtherEnd="model.mwgl.eo.ShippingOptionTranslationFkAssoc.ShippingOptionsTranslationsEO"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="ShippingOptionTranslatiPk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SHIPPING_OPTION_TRANSLATI_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item
+        Value="model.mwgl.eo.ShippingOptionsTranslationsEO.ShippingTranslationsId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007230">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007230"/>
+      <Attr Name="_checkCondition"
+        Value='"SHIPPING_TRANSLATIONS_ID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item
+        Value="model.mwgl.eo.ShippingOptionsTranslationsEO.ShippingTranslationsId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007231">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007231"/>
+      <Attr Name="_checkCondition" Value='"SHIPPING_OPTION_ID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item
+        Value="model.mwgl.eo.ShippingOptionsTranslationsEO.ShippingOptionId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007232">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007232"/>
+      <Attr Name="_checkCondition" Value='"SHIPPING_METHOD" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.ShippingOptionsTranslationsEO.ShippingMethod"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007233">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007233"/>
+      <Attr Name="_checkCondition" Value='"LANGUAGE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.ShippingOptionsTranslationsEO.Language"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007234">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007234"/>
+      <Attr Name="_checkCondition" Value='"SOURCE_LANG" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.ShippingOptionsTranslationsEO.SourceLang"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007235">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007235"/>
+      <Attr Name="_checkCondition" Value='"CREATED_BY" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.ShippingOptionsTranslationsEO.CreatedBy"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007236">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007236"/>
+      <Attr Name="_checkCondition" Value='"CREATION_DATE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.ShippingOptionsTranslationsEO.CreationDate"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007237">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007237"/>
+      <Attr Name="_checkCondition" Value='"LAST_UPDATED_BY" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.ShippingOptionsTranslationsEO.LastUpdatedBy"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007238">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007238"/>
+      <Attr Name="_checkCondition" Value='"LAST_UPDATE_DATE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.ShippingOptionsTranslationsEO.LastUpdateDate"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007239">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007239"/>
+      <Attr Name="_checkCondition" Value='"OBJECT_VERSION_ID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item
+        Value="model.mwgl.eo.ShippingOptionsTranslationsEO.ObjectVersionId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="ShippingOptionTranslationFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="SHIPPING_OPTIONS_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="SHIPPING_OPTION_TRANSLATION_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item
+        Value="model.mwgl.eo.ShippingOptionsTranslationsEO.ShippingOptionId"/>
+    </AttrArray>
+  </Key>
+</Entity>

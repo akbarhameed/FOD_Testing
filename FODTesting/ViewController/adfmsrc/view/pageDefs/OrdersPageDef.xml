@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.64.93" id="OrdersPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator id="OrdersView4Iterator" Binds="OrdersView4"
+              DataControl="FODModuleDataControl" RangeSize="25"
+              ChangeEventPolicy="ppr"/>
+    <iterator id="AddressesView1Iterator" Binds="AddressesView1"
+              DataControl="FODModuleDataControl" RangeSize="25"
+              ChangeEventPolicy="ppr"/>
+    <iterator Binds="PersonsView1" RangeSize="25"
+              DataControl="FODModuleDataControl" id="PersonsView1Iterator"
+              ChangeEventPolicy="ppr"/>
+    <iterator id="PaymentOptionsView2Iterator" Binds="PaymentOptionsView2"
+              DataControl="FODModuleDataControl" RangeSize="25"
+              ChangeEventPolicy="ppr"/>
+    <iterator Binds="AddressesView2" RangeSize="25"
+              DataControl="FODModuleDataControl" id="AddressesView2Iterator"
+              ChangeEventPolicy="ppr"/>
+    <iterator Binds="OrderItemsView4" RangeSize="25"
+              DataControl="FODModuleDataControl" id="OrderItemsView4Iterator"
+              ChangeEventPolicy="ppr"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="OrdersView4Iterator" id="ShipToName">
+      <AttrNames>
+        <Item Value="ShipToName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AddressesView1Iterator" id="Address1">
+      <AttrNames>
+        <Item Value="Address1"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AddressesView1Iterator" id="Address2">
+      <AttrNames>
+        <Item Value="Address2"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AddressesView1Iterator" id="City">
+      <AttrNames>
+        <Item Value="City"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AddressesView1Iterator" id="PostalCode">
+      <AttrNames>
+        <Item Value="PostalCode"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AddressesView1Iterator" id="StateProvince">
+      <AttrNames>
+        <Item Value="StateProvince"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AddressesView1Iterator" id="CountryId">
+      <AttrNames>
+        <Item Value="CountryId"/>
+      </AttrNames>
+    </attributeValues>
+    <action IterBinding="PersonsView1Iterator" id="Next"
+            RequiresUpdateModel="true" Action="next"/>
+    <action IterBinding="PersonsView1Iterator" id="Previous"
+            RequiresUpdateModel="true" Action="previous"/>
+    <attributeValues IterBinding="PaymentOptionsView2Iterator"
+                     id="PaymentTypeCode">
+      <AttrNames>
+        <Item Value="PaymentTypeCode"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PaymentOptionsView2Iterator"
+                     id="AccountNumber">
+      <AttrNames>
+        <Item Value="AccountNumber"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PaymentOptionsView2Iterator"
+                     id="CardTypeCode">
+      <AttrNames>
+        <Item Value="CardTypeCode"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PaymentOptionsView2Iterator" id="ExpireDate">
+      <AttrNames>
+        <Item Value="ExpireDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PaymentOptionsView2Iterator" id="CheckDigits">
+      <AttrNames>
+        <Item Value="CheckDigits"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PaymentOptionsView2Iterator"
+                     id="RoutingIdentifier">
+      <AttrNames>
+        <Item Value="RoutingIdentifier"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PaymentOptionsView2Iterator"
+                     id="InstitutionName">
+      <AttrNames>
+        <Item Value="InstitutionName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PaymentOptionsView2Iterator"
+                     id="ValidFromDate">
+      <AttrNames>
+        <Item Value="ValidFromDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PaymentOptionsView2Iterator" id="ValidToDate">
+      <AttrNames>
+        <Item Value="ValidToDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OrdersView4Iterator"
+                     id="CalculatedOrderTotal">
+      <AttrNames>
+        <Item Value="CalculatedOrderTotal"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OrdersView4Iterator" id="TotalShippingCost">
+      <AttrNames>
+        <Item Value="TotalShippingCost"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OrdersView4Iterator" id="DiscountAmount">
+      <AttrNames>
+        <Item Value="DiscountAmount"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OrdersView4Iterator" id="InvoiceTotal">
+      <AttrNames>
+        <Item Value="InvoiceTotal"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OrdersView4Iterator" id="OrderStatusCode">
+      <AttrNames>
+        <Item Value="OrderStatusCode"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PersonsView1Iterator" id="FirstName">
+      <AttrNames>
+        <Item Value="FirstName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PersonsView1Iterator" id="LastName">
+      <AttrNames>
+        <Item Value="LastName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AddressesView2Iterator" id="Address11">
+      <AttrNames>
+        <Item Value="Address1"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AddressesView2Iterator" id="Address21">
+      <AttrNames>
+        <Item Value="Address2"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AddressesView2Iterator" id="City1">
+      <AttrNames>
+        <Item Value="City"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AddressesView2Iterator" id="StateProvince1">
+      <AttrNames>
+        <Item Value="StateProvince"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AddressesView2Iterator" id="PostalCode1">
+      <AttrNames>
+        <Item Value="PostalCode"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AddressesView2Iterator" id="CountryId1">
+      <AttrNames>
+        <Item Value="CountryId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OrdersView4Iterator" id="GiftwrapMessage">
+      <AttrNames>
+        <Item Value="GiftwrapMessage"/>
+      </AttrNames>
+    </attributeValues>
+    <tree IterBinding="OrderItemsView4Iterator" id="OrderItemsView4">
+      <nodeDefinition DefName="model.mwgl.vo.OrderItemsView"
+                      Name="OrderItemsView40">
+        <AttrNames>
+          <Item Value="CreatedBy"/>
+          <Item Value="CreationDate"/>
+          <Item Value="Description"/>
+          <Item Value="Language"/>
+          <Item Value="LastUpdateDate"/>
+          <Item Value="LastUpdatedBy"/>
+          <Item Value="LineItemId"/>
+          <Item Value="ListPrice"/>
+          <Item Value="ObjectVersionId"/>
+          <Item Value="OrderId"/>
+          <Item Value="ProductId"/>
+          <Item Value="ProductId1"/>
+          <Item Value="Quantity"/>
+          <Item Value="ShippingCost"/>
+          <Item Value="UnitPrice"/>
+          <Item Value="CategoryName"/>
+          <Item Value="CategoryId1"/>
+          <Item Value="Language1"/>
+          <Item Value="ProductName"/>
+          <Item Value="ProductId2"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <attributeValues IterBinding="OrderItemsView4Iterator" id="CategoryName">
+      <AttrNames>
+        <Item Value="CategoryName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OrderItemsView4Iterator" id="ProductName">
+      <AttrNames>
+        <Item Value="ProductName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OrderItemsView4Iterator" id="ListPrice">
+      <AttrNames>
+        <Item Value="ListPrice"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OrderItemsView4Iterator" id="Description">
+      <AttrNames>
+        <Item Value="Description"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OrderItemsView4Iterator" id="AdditionalInfo">
+      <AttrNames>
+        <Item Value="AdditionalInfo"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OrderItemsView4Iterator" id="Quantity">
+      <AttrNames>
+        <Item Value="Quantity"/>
+      </AttrNames>
+    </attributeValues>
+    <action IterBinding="OrderItemsView4Iterator" id="Next1"
+            RequiresUpdateModel="true" Action="next"/>
+    <action IterBinding="OrderItemsView4Iterator" id="Previous1"
+            RequiresUpdateModel="true" Action="previous"/>
+    <navigationlist ListOperMode="navigation" IterBinding="OrdersView4Iterator"
+                    id="OrderId">
+      <AttrNames>
+        <Item Value="OrderId"/>
+        <Item Value="OrderStatusCode"/>
+      </AttrNames>
+    </navigationlist>
+    <methodAction IterBinding="OrdersView4Iterator" id="cancelOrder"
+                  RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="cancelOrder" IsViewObjectMethod="true"
+                  DataControl="FODModuleDataControl"
+                  InstanceName="FODModuleDataControl.OrdersView4"/>
+    <list IterBinding="OrdersView4Iterator" Uses="LOV_ShippingOptionId" id="ShippingOptionsRadioId"/>
+  </bindings>
+</pageDefinition>

@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Persons"
+  Version="11.1.1.64.93"
+  InheritPersonalization="true"
+  DBObjectType="table"
+  DBObjectName="PERSONS"
+  AliasName="Persons"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <DesignTime>
+    <Attr Name="_codeGenFlag2" Value="Access"/>
+    <AttrArray Name="_publishEvents"/>
+  </DesignTime>
+  <Attribute
+    Name="PersonId"
+    IsNotNull="true"
+    Precision="15"
+    Scale="0"
+    ColumnName="PERSON_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="PERSONS"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="16"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="PrincipalName"
+    IsNotNull="true"
+    Precision="60"
+    ColumnName="PRINCIPAL_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="60"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Title"
+    Precision="12"
+    ColumnName="TITLE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="12"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="FirstName"
+    Precision="30"
+    ColumnName="FIRST_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastName"
+    Precision="30"
+    ColumnName="LAST_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="PersonTypeCode"
+    IsNotNull="true"
+    Precision="30"
+    ColumnName="PERSON_TYPE_CODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="SupplierId"
+    Precision="15"
+    Scale="0"
+    ColumnName="SUPPLIER_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="16"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ProvisionedFlag"
+    Precision="1"
+    ColumnName="PROVISIONED_FLAG"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="PrimaryAddressId"
+    Precision="15"
+    Scale="0"
+    ColumnName="PRIMARY_ADDRESS_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="16"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="RegisteredDate"
+    ColumnName="REGISTERED_DATE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="MembershipId"
+    Precision="15"
+    Scale="0"
+    ColumnName="MEMBERSHIP_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="16"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Email"
+    IsNotNull="true"
+    Precision="25"
+    ColumnName="EMAIL"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="25"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ConfirmedEmail"
+    Precision="25"
+    ColumnName="CONFIRMED_EMAIL"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="25"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="PhoneNumber"
+    Precision="20"
+    ColumnName="PHONE_NUMBER"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="MobilePhoneNumber"
+    Precision="20"
+    ColumnName="MOBILE_PHONE_NUMBER"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreditLimit"
+    Precision="9"
+    Scale="2"
+    ColumnName="CREDIT_LIMIT"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="11"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="DateOfBirth"
+    ColumnName="DATE_OF_BIRTH"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="MaritalStatusCode"
+    IsNotNull="true"
+    Precision="30"
+    ColumnName="MARITAL_STATUS_CODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Gender"
+    IsNotNull="true"
+    Precision="1"
+    ColumnName="GENDER"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ChildrenUnder18"
+    Precision="2"
+    Scale="0"
+    ColumnName="CHILDREN_UNDER_18"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="3"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ApproximateIncome"
+    Precision="15"
+    Scale="0"
+    ColumnName="APPROXIMATE_INCOME"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="16"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ContactMethodCode"
+    Precision="30"
+    ColumnName="CONTACT_METHOD_CODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ContactableFlag"
+    IsNotNull="true"
+    Precision="1"
+    ColumnName="CONTACTABLE_FLAG"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ContactByAffilliatesFlag"
+    IsNotNull="true"
+    Precision="1"
+    ColumnName="CONTACT_BY_AFFILLIATES_FLAG"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreatedBy"
+    IsNotNull="true"
+    Precision="60"
+    ColumnName="CREATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="60"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreationDate"
+    IsNotNull="true"
+    ColumnName="CREATION_DATE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastUpdatedBy"
+    IsNotNull="true"
+    Precision="60"
+    ColumnName="LAST_UPDATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="60"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastUpdateDate"
+    IsNotNull="true"
+    ColumnName="LAST_UPDATE_DATE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ObjectVersionId"
+    IsNotNull="true"
+    Precision="15"
+    Scale="0"
+    ColumnName="OBJECT_VERSION_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="PERSONS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="16"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="Addresses"
+    Association="model.mwgl.eo.assoc.PersonsAddressesFkAssoc"
+    AssociationEnd="model.mwgl.eo.assoc.PersonsAddressesFkAssoc.Addresses"
+    AssociationOtherEnd="model.mwgl.eo.assoc.PersonsAddressesFkAssoc.Persons"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="PaymentOptions"
+    Association="model.mwgl.eo.assoc.PaymentOptionsPersonsFkAssoc"
+    AssociationEnd="model.mwgl.eo.assoc.PaymentOptionsPersonsFkAssoc.PaymentOptions"
+    AssociationOtherEnd="model.mwgl.eo.assoc.PaymentOptionsPersonsFkAssoc.Persons"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Orders"
+    Association="model.mwgl.eo.assoc.OrdersPersonsFkAssoc"
+    AssociationEnd="model.mwgl.eo.assoc.OrdersPersonsFkAssoc.Orders"
+    AssociationOtherEnd="model.mwgl.eo.assoc.OrdersPersonsFkAssoc.Persons"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <Key
+    Name="PersonsAffContactChk">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="PERSONS_AFF_CONTACT_CHK"/>
+      <Attr Name="_checkCondition"
+        Value="CONTACT_BY_AFFILLIATES_FLAG in ('Y','N')"/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.ContactByAffilliatesFlag"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PersonsContactChk">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="PERSONS_CONTACT_CHK"/>
+      <Attr Name="_checkCondition" Value="CONTACTABLE_FLAG in ('Y','N')"/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.ContactableFlag"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PersonsGenderChk">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="PERSONS_GENDER_CHK"/>
+      <Attr Name="_checkCondition" Value="GENDER in ('M','F','D')"/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.Gender"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PersonsPk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="PERSONS_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.PersonId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PersonsProvisionedChk">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="PERSONS_PROVISIONED_CHK"/>
+      <Attr Name="_checkCondition" Value="PROVISIONED_FLAG in ('Y','N')"/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.ProvisionedFlag"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007087">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007087"/>
+      <Attr Name="_checkCondition" Value='"PERSON_ID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.PersonId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007088">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007088"/>
+      <Attr Name="_checkCondition" Value='"PRINCIPAL_NAME" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.PrincipalName"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007089">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007089"/>
+      <Attr Name="_checkCondition" Value='"PERSON_TYPE_CODE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.PersonTypeCode"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007090">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007090"/>
+      <Attr Name="_checkCondition" Value='"EMAIL" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.Email"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007091">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007091"/>
+      <Attr Name="_checkCondition" Value='"MARITAL_STATUS_CODE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.MaritalStatusCode"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007092">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007092"/>
+      <Attr Name="_checkCondition" Value='"GENDER" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.Gender"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007093">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007093"/>
+      <Attr Name="_checkCondition" Value='"CONTACTABLE_FLAG" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.ContactableFlag"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007094">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007094"/>
+      <Attr Name="_checkCondition"
+        Value='"CONTACT_BY_AFFILLIATES_FLAG" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.ContactByAffilliatesFlag"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007095">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007095"/>
+      <Attr Name="_checkCondition" Value='"CREATED_BY" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.CreatedBy"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007096">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007096"/>
+      <Attr Name="_checkCondition" Value='"CREATION_DATE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.CreationDate"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007097">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007097"/>
+      <Attr Name="_checkCondition" Value='"LAST_UPDATED_BY" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.LastUpdatedBy"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007098">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007098"/>
+      <Attr Name="_checkCondition" Value='"LAST_UPDATE_DATE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.LastUpdateDate"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC007099">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C007099"/>
+      <Attr Name="_checkCondition" Value='"OBJECT_VERSION_ID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.ObjectVersionId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PersonSupplierFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="SUPPLIERS_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PERSON_SUPPLIER_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.SupplierId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PersonsAddressesFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="ADDRESSES_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PERSONS_ADDRESSES_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.PrimaryAddressId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PersonsMembershipsBaseFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="MEMBERSHIPS_BASE_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PERSONS_MEMBERSHIPS_BASE_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.mwgl.eo.Persons.MembershipId"/>
+    </AttrArray>
+  </Key>
+</Entity>
